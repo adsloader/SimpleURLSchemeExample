@@ -43,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        // URL Scheme으로 왔다면 파라메터로 넘어온 전화번호를 읽어와서
-        // SMS를 보낸다.
         Intent i = getIntent();
         if(i != null){
             Uri uri = i.getData();
