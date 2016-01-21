@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // webview를 가져온다.
         webview = (WebView)findViewById(R.id.webView);
         // webview client 객체를 넘긴다.
-        webview.setWebViewClient(new WebClient()); // 응룡프로그램에서 직접 url 처리
+        webview.setWebViewClient(new WebClient()); 
         // 브라우저 세팅을 가져온다.
         WebSettings set = webview.getSettings();
         // 자바스크립트를 실행가능하게
