@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             if (uri == null) return;
 
             // 파라메터를 읽어와서 보여준다.
+            // ex) www.vintageappmaker.com?a=3&b=4이면
+            // a=3&b=4 sMessage에 가져온다. 
             String sMessage = uri.getQueryParameter("message");
             Toast.makeText(getApplicationContext(), sMessage, Toast.LENGTH_LONG).show();
         }
