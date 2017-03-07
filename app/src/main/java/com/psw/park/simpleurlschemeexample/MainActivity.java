@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        // 실행되었을 때, 누군가 Intent로 호출했다면
+        // 그 Intent 객체로 getData()를 하여 파라메터를 가져온다. 
         Intent i = getIntent();
         if(i != null){
             Uri uri = i.getData();
